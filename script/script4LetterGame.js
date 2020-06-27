@@ -30,19 +30,82 @@ function setRandomLetter(){
 // returns a random letter from that set
 // allows me to input array into event listener up top
 
+// below: the text that appears on top of chalk board
+
 levelButton.addEventListener("click", function () {
-    document.getElementById("levelText").innerHTML += "Level: The entire alphabet" 
+    var newText = document.createElement("h1");
+    newText.id = "levelText";
+
+    var newTextContent = document.createTextNode("The entire Alphabet");
+    newText.appendChild(newTextContent);
+
+    var oldText = document.getElementById("levelText");
+    var parentDiv = oldText.parentNode;
+
+    parentDiv.replaceChild( newText, oldText);
+    
+});
+
+stopButton.addEventListener("click", function () {
+   
+    var newText = document.createElement("h1");
+    newText.id = "levelText";
+
+    var newTextContent = document.createTextNode("Stopped");
+    newText.appendChild(newTextContent);
+
+    var oldText = document.getElementById("levelText");
+    var parentDiv = oldText.parentNode;
+
+    parentDiv.replaceChild( newText, oldText);
+
 });
 
 levelButton2.addEventListener("click" , function () {
-    document.getElementById("levelText").innerHTML += "Level: The vowels"
+    
+    var newText = document.createElement("h1");
+    newText.id = "levelText";
+    
+    var newTextContent = document.createTextNode("The Vowels");
+    newText.appendChild(newTextContent);
+    
+    var oldText = document.getElementById("levelText");
+    var parentDiv = oldText.parentNode;
+    
+    parentDiv.replaceChild( newText, oldText);
 
 });
 
 levelButton3.addEventListener("click", function () {
-document.getElementById("levelText").innerHTML += "Level: g, j, i, e "
+
+    var newText = document.createElement("h1");
+    newText.id = "levelText";
+    
+    var newTextContent = document.createTextNode("G, J, I, E");
+    newText.appendChild(newTextContent);
+    
+    var oldText = document.getElementById("levelText");
+    var parentDiv = oldText.parentNode;
+    
+    parentDiv.replaceChild( newText, oldText);
 });
 
 levelButton4.addEventListener ("click" , function () {
-document.getElementById("levelText").innerHTML += "Level: g and j"
+    var newText = document.createElement("h1");
+    newText.id = "levelText";
+    
+    var newTextContent = document.createTextNode("G and J");
+    newText.appendChild(newTextContent);
+    
+    var oldText = document.getElementById("levelText");
+    var parentDiv = oldText.parentNode;
+    
+    parentDiv.replaceChild( newText, oldText);
 });
+
+//old structure just in case I have to go back
+
+/*levelButton.addEventListener("click", function () {
+    document.getElementById("levelText").innerHTML += "Level: The entire alphabet" 
+});
+*/
