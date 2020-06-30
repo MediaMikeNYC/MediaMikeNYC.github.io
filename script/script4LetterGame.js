@@ -1,10 +1,9 @@
-// The arrays that determine the levels of difficulty
-
 var allLetters = "abcdefghijklmnopqrstuvwxyz".split("");
 var vowels = 'aeiouy'.split('');
 var otherLetters = [' g ' , ' j ', ' i ' , ' e '];
 var otherLetters1 = [' g ', ' j '];
 
+// start button functions
 let start = 0;
 startButton.addEventListener("click", function () {
     for (y = 0; y < allLetters.length; y++) {
@@ -12,14 +11,32 @@ startButton.addEventListener("click", function () {
     }
 });
 
+levelButton2.addEventListener("click", function () {
+    for (y = 0; y < vowels.length; y++) {
+       setTimeout(() => getRandom(vowels), y*1000);
+    }
+});
+
+levelButton3.addEventListener("click", function () {
+    for (y = 0; y < otherLetters.length; y++) {
+       setTimeout(() => getRandom(otherLetters), y*1000);
+    }
+});
+
+levelButton4.addEventListener("click", function () {
+    for (y = 0; y < otherLetters1.length; y++) {
+       setTimeout(() => getRandom(otherLetters1), y*1000);
+    }
+});
+
 function getRandom (letters) {
-    var randomSet = letters[Math.floor(Math.random() * allLetters.length)];
+    var randomSet = letters[Math.floor(Math.random() * letters.length)];
     console.log('set random' , randomSet)
     document.getElementById("demo3").innerHTML = randomSet;
 };
 
 // function that assigns entire alphabet
-function setRandomLetter(){
+ function setRandomLetter(){
     var letter = allLetters[Math.floor(Math.random() * allLetters.length)];
     console.log('setRandom ', letter)
     document.getElementById("demo3").innerHTML = letter; 
@@ -29,7 +46,6 @@ function setRandomLetter(){
 // accepts array of possible letters
 // returns a random letter from that set
 // allows me to input array into event listener up top
-
 // below: the text that appears on top of chalk board
 
 levelButton.addEventListener("click", function () {
@@ -102,10 +118,3 @@ levelButton4.addEventListener ("click" , function () {
     
     parentDiv.replaceChild( newText, oldText);
 });
-
-//old structure just in case I have to go back
-
-/*levelButton.addEventListener("click", function () {
-    document.getElementById("levelText").innerHTML += "Level: The entire alphabet" 
-});
-*/
