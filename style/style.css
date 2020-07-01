@@ -31,7 +31,6 @@ button:hover {
 }
 
 
-
 section {
     
     border-color:aqua;
@@ -123,7 +122,7 @@ section {
 }
 
 #levels {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #demo2 { height: 1.5em;}
 
