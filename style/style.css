@@ -1,11 +1,6 @@
-
-body {
-
-}
 h1 {
     text-align:center;
     font-size: 25px;
-
 }
 
 button {
@@ -17,9 +12,8 @@ button {
 }
 button:hover {
     background-color: #099499;
-
-
 }
+
 .bigLetters {
     color: white;
     font: Comic Sans MS, cursive, sans-serif;
@@ -30,25 +24,21 @@ button:hover {
     font-size: 15px;
 }
 
-
-section {
-    
+section {    
     border-color:aqua;
     margin: 100px;
 }
 
 .buttonBox1 {
-   border: 2px black;
-   border-style: solid;
-   border-radius: 3px;
-   width: 200px;
-   height:100px;
-   margin-bottom: 30px;
-   display: inline-block;
-   margin: 15px;
-   text-align: center;
-
-
+    border: 2px black;
+    border-style: solid;
+    border-radius: 3px;
+    width: 200px;
+    height:100px;
+    margin-bottom: 30px;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
 }
 
 .buttonBox2 {
@@ -61,7 +51,6 @@ section {
     display: inline-block;
     margin: 15px;
     text-align: center;
-
 }
 
 .buttonBox3 {
@@ -74,7 +63,6 @@ section {
     display: inline-block;
     margin: 15px;
     text-align: center;
-
 }
 
 .buttonBox4 {
@@ -87,7 +75,6 @@ section {
     display: inline-block;
     margin: 15px;
     text-align: center;
-
 }
 
 .bigLetters {
@@ -101,33 +88,32 @@ section {
     border-color: #CD986A;
     padding-bottom: 300px;
     background-color: #016837;
-    max-height: 70px;
+    max-height: 40px;
     max-width: 900px;
     border-radius: 2px;
     margin: auto;
     margin-top: 50px;
 }
 
-
 #stopButton {
     margin-top: 30px;
     padding: 7px;
-    background-color: #8A0905;
-    
+    background-color: #8A0905; 
 }
 
 #stopButton:hover {
     background-color: #ad1c18;
-
 }
 
 #levels {
     margin-top: 50px;
 }
-#demo2 { height: 1.5em;}
+
+#demo2 { 
+    height: 1.5em;
+}
 
 #chalkText {
-
     color:white;
     text-align: center;
 }
@@ -136,45 +122,42 @@ section {
     text-align: center;
 }
 
-
 @media screen and (max-width: 850px) {
-    .buttonBox1 {
-        border: 2px black;
-       border-style: solid;
-       min-width:  180px;
-       text-align: center;
-      
-    
-    
+
+.buttonBox1 {
+    border: 2px black;
+    border-style: solid;
+    min-width:  180px;
+    text-align: center;
     }
     
-    .buttonBox2 {
-        border: 2px;
-        border-style: solid;
-        min-width:  180px;
-        text-align: center;
-      
-    
+.buttonBox2 {
+    border: 2px;
+    border-style: solid;
+    min-width:  180px;
+    text-align: center;
     }
     
-    .buttonBox3 {
-        border: 2px;
-        border-style: solid;
-        min-width:  180px;
-        text-align: center;
+.buttonBox3 {
+    border: 2px;
+    border-style: solid;
+    min-width:  180px;
+    text-align: center;
       
     }
     
-    .buttonBox4 {
-        border: 2px;
-        border-style:solid;
-        min-width:  180px;
-        text-align: center;
-      
-}
+.buttonBox4 {
+    border: 2px;
+    border-style:solid;
+    min-width:  180px;
+    text-align: center;
+    }
 
 .letterBox {
-
     min-width: 500px;
-}}
+} 
+#chalkText {
+    margin: 20px; 
+}
+}
 
