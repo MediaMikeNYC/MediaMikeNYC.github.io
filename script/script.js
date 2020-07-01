@@ -19,6 +19,7 @@ startButton.addEventListener("click", function () {
  // stop button
  stopButton.addEventListener("click", function () {
     clearTimeout(_timer);
+    clearTimeout(getRandom);
  });
  
  function getRandom (letters) {
